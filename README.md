@@ -1,4 +1,4 @@
 freshman
 ========
 
-a jeklly blog theme
+a jekyll blog theme
