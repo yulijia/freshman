@@ -1,0 +1,288 @@
+/**
+ * Site header
+ */
+.site-header {
+  //Positioning context for the mobile navigation icon
+  position: relative;
+  span { vertical-align: baseline; }
+}
+
+.site-title {
+  font-size: $base-font-size*2;
+  line-height: 40px;
+  margin-bottom: 0;
+  display:inline;
+  a{
+    &,
+    &:visited
+    &:hover {
+      color: $brand-color; //$grey-color-dark
+      text-decoration: none;
+    }
+  }
+}
+
+.site-meta{
+  font-size: $base-font-size;
+  display:inline;
+  line-height:30px;
+  margin-bottom: 0;
+  padding-left: 5px;
+  color: $grey-color;
+}
+
+.site-nav {
+  .menu-icon {
+    display: none;
+  }
+
+  .page-link {
+    line-height: $base-line-height;
+    margin: 0px 5px;
+  }
+  border-bottom: 1px dotted;
+  color: $grey-color;
+}
+
+
+/**
+ * Site footer
+ */
+
+.site-footer {
+  clear: both;
+  text-align: right;
+  border-top: 1px solid $grey-color-light;
+  margin: $spacing-unit/2 0; 
+  padding: $spacing-unit/2 0;
+  font-size: $small-font-size;
+}
+
+
+
+/**
+ * Page content
+ */
+.page-content {
+  padding:10px 0;
+}
+
+.page-heading {
+  font-size: $base-font-size*2;
+}
+
+
+.post-list {
+  margin-left: 0px;
+  list-style: none;
+
+  > li {
+    margin-bottom: $spacing-unit;
+  }
+}
+
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+}
+
+.post-link {
+  display: block;
+  font-size: $base-font-size;
+}
+
+
+
+/**
+ * Posts
+ */
+
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.post-title {
+  font-size: $base-font-size*2;
+  letter-spacing: -1px;
+  line-height: 1;
+  color: $brand-color;
+  @include media-query($on-laptop) {
+    font-size: $base-font-size*1.8;
+  }
+}
+
+.post-content {
+
+  //margin-bottom: $spacing-unit/2;
+  h1 { 
+    font-size:  $base-font-size*2;
+    line-height:1em;
+    @include media-query($on-laptop){
+      font-size:  $base-font-size*1.8;
+    }
+
+  }
+  h2 {
+    font-size:  $base-font-size*1.75;
+    line-height:1em;
+
+    @include media-query($on-laptop) {
+      font-size:  $base-font-size*1.6;
+    }
+  }
+
+  h3 {
+    font-size:  $base-font-size*1.5;
+    line-height:1em;
+
+    @include media-query($on-laptop) {
+      font-size:  $base-font-size*1.3;
+    }
+  }
+
+  h4 {
+    font-size:  $base-font-size*1.25;
+    line-height:1em;
+
+    @include media-query($on-laptop) {
+      font-size:  $base-font-size*1.1;
+    }
+  }
+}
+
+
+/**
+ * Pagination Style
+ */
+
+.pager{
+  //margin-bottom: 40px;
+  text-align: center;
+  ul { display: block; margin: 10px 0; }
+  li{list-style: none;}
+  li.previous a{float:left;}
+  li.next a{float:right;}
+  li.disabled {display:none;}
+}
+
+
+/**
+ * Tags and Categories Style
+ */
+
+.tags-box{
+  li {
+    list-style: none;
+    font-weight: bold;
+    margin-top:10px;
+  }
+  .size{
+    font-size: 0.7em; font-weight: bold; vertical-align: super;
+  }
+}
+
+
+/*time style of tages and categories*/
+
+time{
+  margin-left: 15px;
+  font-style: italic;
+}
+
+
+
+/**
+ * Aboutme photo Style
+ */
+
+.about{
+  img {
+    height: 128px;
+    width: 128px;
+    border-radius:50%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+
+
+/**
+ * New style for quotation.
+ */
+
+q:before {
+  content: '『';
+  color: #DD1144;
+  font-weight:bold;
+}
+q:after {
+  content:'』';
+  color: #DD1144;
+  font-weight:bold;
+}
+
+
+/**
+ * Only used for me
+ */
+
+::selection {
+  background:#669900; 
+  color: #fff; 
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background:#669900; 
+  color: #fff; 
+  text-shadow: none;
+}
+
+::-webkit-selection {
+  background:#669900; 
+  color: #fff; 
+  text-shadow: none;
+}
+
+
+/**
+ * I didn't need those anchor now, but I leave them there
+ */
+
+div.label-anchor {
+  float: left;
+  width: 0;
+}
+
+a.label-anchor {
+  position: relative;
+  display: block;
+  text-align: right;
+  left: -60px;
+  top: -25px;
+  padding-top: 30px;
+  font-family: 'PT Sans', sans-serif;
+}
+a.label-anchor:target span {
+  background-color: #b94a48;
+}
+a.label-anchor:hover {
+  text-decoration: none;
+}
+a.label-anchor span {
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 14px;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #666;
+  padding: 1px 4px 2px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
