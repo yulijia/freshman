@@ -65,7 +65,9 @@
  */
 .page-content {
   padding:10px 0;
+  strong { font-weight: bold; }
 }
+
 
 .page-heading {
   font-size: $base-font-size*2;
