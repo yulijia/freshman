@@ -10,7 +10,7 @@ email: yu@lijiayu.net
 description: "Freshman is a jekyll blog theme"
 keywords: "Jekyll, Freshman, theme"
 baseurl: "/freshman" # the subpath of your site, e.g. /blog/
-url: "http://yulijia.net/freshman" # the base hostname & protocol for your site
+url: "https://yulijia.net/freshman" # the base hostname & protocol for your site
 twitter_username: yulijia
 github_username:  yulijia
 disqus_shortname: freshmantheme
